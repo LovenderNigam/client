@@ -79,3 +79,11 @@
     transform: rotate(5deg) scale(1.1, 1.1);
     filter: brightness(110%);
 }
+@media only screen and (max-width: 600px) {
+    .know-home-card{
+      display: block !important;
+    }
+.col-md-4{
+    width: fit-content;
+}
+  }

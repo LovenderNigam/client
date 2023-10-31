@@ -1,6 +1,11 @@
 #speakers {
     padding: 60px 0 30px 0;
+    background-image: url('../../api/Assets/img/speakerng.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
+
   
   #speakers .speaker {
     position: relative;

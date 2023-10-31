@@ -21,7 +21,7 @@ getAllSponsers();
   return (
     <>
     <Navbar/>
-    <section id="speakers">
+    <section id="sponsers">
   <div className="container aos-init aos-animate" data-aos="fade-up">
     <div className="text-center mb-4">
       <h2>Sponsers</h2>

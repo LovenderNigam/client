@@ -35,18 +35,19 @@ const Cards = () => {
       </div>
       <div className="row mx-2">
         <h1 className='text-center about' style={{color:'#1d5818'}}><strong>Know More..</strong></h1>
-        {AboutCard.map((item) =>
+  <div className="know-home-card" style={{display:'flex',justifyContent:'space-between'}}>
+  {AboutCard.map((item) =>
           <div className="col-md-4 mt-2" key={item._id}>
 
 
             <Link to={item.url}>
             <div className="know-card text-center"><img src={item.img} className="img img-responsive" alt='Know More' />
-              <div className="profile-content"><Link to={item.url}><h4>{item.title}</h4></Link>
+              <div className="profile-content"><h4>{item.title}</h4>
                 <div className="profile-description">{item.paragraph}</div>
                 <div className="row">
                   <div className="col-xs-4">
                     <div className="profile-overview">
-                      <Link to={item.url}><button type="button" class="btn btn-dark ">Read More</button></Link>
+                      <button type="button" class="btn btn-dark ">Read More</button>
                     </div>
                   </div>
                 </div>
@@ -91,6 +92,7 @@ const Cards = () => {
 </div>
 </Link>
 </div>
+  </div>
 
 </div>
 

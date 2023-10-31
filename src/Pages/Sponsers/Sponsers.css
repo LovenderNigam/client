@@ -1,14 +1,18 @@
-#speakers {
+#sponsers {
     padding: 60px 0 30px 0;
+    background-image: url('../../api/Assets/img/sponserback.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
   
-  #speakers .speaker {
+  #sponsers .speaker {
     position: relative;
     overflow: hidden;
     margin-bottom: 30px;
   }
   
-  #speakers .speaker .details {
+  #sponsers .speaker .details {
     background: rgba(6, 12, 34, 0.76);
     position: absolute;
     left: 0;
@@ -19,14 +23,14 @@
     transition: all 300ms cubic-bezier(0.645, 0.045, 0.355, 1);
   }
   
-  #speakers .speaker .details h3 {
+  #sponsers .speaker .details h3 {
     color: #fff;
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 5px;
   }
   
-  #speakers .speaker .details p {
+  #sponsers .speaker .details p {
     color: #fff;
     font-size: 15px;
     margin-bottom: 10px;
@@ -34,43 +38,43 @@
     text-align: center;
   }
   
-  #speakers .speaker .details .social {
+  #sponsers .speaker .details .social {
     height: 40px;
   }
   
-  #speakers .speaker .details .social i {
+  #sponsers .speaker .details .social i {
     line-height: 0;
     margin: 0 2px;
   }
   
-  #speakers .speaker .details a {
+  #sponsers .speaker .details a {
     color: #fff;
   }
   
-  #speakers .speaker .details a:hover {
+  #sponsers .speaker .details a:hover {
     color: #f82249;
   }
   
-  #speakers .speaker:hover .details {
+  #sponsers .speaker:hover .details {
     bottom: 0;
   }
   
-  #speakers-details {
+  #sponsers-details {
     padding: 60px 0;
   }
   
-  #speakers-details .details h2 {
+  #sponsers-details .details h2 {
     color: #112363;
     font-size: 28px;
     font-weight: 700;
     margin-bottom: 10px;
   }
   
-  #speakers-details .details .social {
+  #sponsers-details .details .social {
     margin-bottom: 15px;
   }
   
-  #speakers-details .details .social a {
+  #sponsers-details .details .social a {
     background: #e9edfb;
     color: #112363;
     line-height: 1;
@@ -84,17 +88,17 @@
     justify-content: center;
   }
   
-  #speakers-details .details .social a:hover {
+  #sponsers-details .details .social a:hover {
     background: #f82249;
     color: #fff;
   }
   
-  #speakers-details .details .social a i {
+  #sponsers-details .details .social a i {
     font-size: 16px;
     line-height: 0;
   }
   
-  #speakers-details .details p {
+  #sponsers-details .details p {
     color: #112363;
     font-size: 15px;
     margin-bottom: 10px;
