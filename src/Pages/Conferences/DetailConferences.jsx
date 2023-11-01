@@ -68,12 +68,10 @@ const DetailConferences = () => {
                   <th scope="row">5</th>
                   <td>Feedback Url</td>
                   <td>||</td>
-                  <td  style={{wordBreak:'break-all'}}>{conferences.feedbackurl}</td>
+                  <td  style={{wordBreak:'break-all',color:'Highlight'}}><Link to="https://stmconferences.netlify.app/feedback">{conferences.feedbackurl}</Link></td>
                 </tr>
               </tbody>
             </table>
-
-
 
 
             <div className="d-flex justify-content-between">

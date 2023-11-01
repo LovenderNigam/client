@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Navbar from '../../components/Header/Navbar';
 import { Link } from 'react-router-dom';
 import { getConferences } from '../../api/Api';
+import Footer from '../../components/Footer/Footer';
 
 const itemsPerPage = 10; // Number of items to display per page
 
@@ -132,6 +133,7 @@ const ConferenceTable = () => {
           ))}
         </ul>
       </div>
+      <Footer/>
     </>
   );
 };

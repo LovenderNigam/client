@@ -30,8 +30,8 @@ const onValueChange=(e)=>{
 
 const addTestnomialDetails = async()=>{
    await addTestnomial(testnomial);
+navigate('/');
 
-navigate('/all-testnomial');
 }
 
   return (

@@ -1,7 +1,7 @@
 import axios from "axios";
 
-export const URL = 'https://stmconferencesapi.onrender.com'
-// export const URL = 'http://localhost:8000'
+// export const URL = 'https://stmconferencesapi.onrender.com'
+export const URL = 'http://localhost:8000'
 
 // sponser section
 export const addSponser = async (data) => {

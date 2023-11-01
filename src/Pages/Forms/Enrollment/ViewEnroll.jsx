@@ -30,7 +30,9 @@ const ViewUsers = () => {
   const closeModal = () => {
     setSelectedRowData(null);
   };
-
+  const handlePrint = () => {
+    window.print();
+  };
   return (
     <>
       <div className="d-flex">
@@ -51,7 +53,7 @@ const ViewUsers = () => {
                   <th>Email</th>
                   <th>Contact Number</th>
                   <th>Created At</th>
-                  <th>Actions</th>
+                  {/* <th>Actions</th> */}
                   <th>Preview</th>
                 </tr>
               </thead>
@@ -65,16 +67,16 @@ const ViewUsers = () => {
                     <td>{value.email}</td>
                     <td>{value.contactnumber}</td>
                     <td>{new Date(value.createdAt).toDateString()}</td>
-                    <td>
+                    {/* <td>
                       <button
                         type='button'
-                        className='btn btn-danger'
+                        className='btn btn-danger nav-link disabled'
                         onClick={() => deleteEnrollDetails(value._id)}
                       >
                         Delete
                       </button>
                      
-                    </td>
+                    </td> */}
                     <td> <button
                         type='button'
                         className='btn btn-primary ml-2'
@@ -157,7 +159,12 @@ const ViewUsers = () => {
               </div>
               <div className="modal-footer">
                 <button type="button" className="btn btn-secondary" data-bs-dismiss="modal" onClick={closeModal}>Close</button>
-                <button type="button" className="btn btn-outline-primary">Print</button>
+                <button
+              className="btn btn-outline-primary"
+              onClick={handlePrint}
+            >
+              Print Table
+            </button>
               </div>
             </div>
           </div>

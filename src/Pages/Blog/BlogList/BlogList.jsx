@@ -3,75 +3,59 @@ import { Link } from 'react-router-dom'
 import Navbar from '../../../components/Header/Navbar'
 import Footer from '../../../components/Footer/Footer'
 import { useEffect, useState } from 'react';
-import {getNewss}  from '../../../api/Api';
+import { getNewss } from '../../../api/Api';
 
 const BlogList = () => {
 
 
-  const [newss, setNewss]= useState ([]);
+  const [newss, setNewss] = useState([]);
 
-  useEffect(()=>{
+  useEffect(() => {
     getAllNewss();
-  },[]);
+  }, []);
 
-  const getAllNewss = async(id)=>{
-    let response =  await getNewss(id);
+  const getAllNewss = async (id) => {
+    let response = await getNewss(id);
     setNewss(response.data);
- 
-   }
+
+  }
   return (
     <>
-    <Navbar/>
-    <section id="search-result" className="search-result">
-  <div className="container">
-    <div className="row">
-      <div className="col-md-12">
-        <h3 className="category-title">Search Results</h3>
-        {
-          newss.map(news=>(
-            <div className="d-md-flex post-entry-2 small-img">
-            <Link to={`/detail-news/${news._id}`} className="me-4 thumbnail">
-              <img src={news.image} alt="news" className="img-fluid" />
-            </Link>
-            <div>
-              <div className="post-meta"><span className="date">Business</span> <span className="mx-1">•</span> <span>Jul 5th '22</span></div>
-              <h3><Link to={`/detail-news/${news._id}`}>{news.title}</Link></h3>
-              <p>{news.keypoints}</p>
-              <div className="d-flex align-items-center author">
-                <div className="photo"></div>
-                <div className="name">
-                  {/* <h3 className="m-0 p-0">Wade Warren</h3> */}
-                </div>
-              </div>
+      <Navbar />
+      <section id="search-result" className="search-result">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <h3 className="category-title">All News List</h3>
+              {
+                newss.map(news => (
+                  <div className="d-md-flex post-entry-2">
+                    <Link to={`/detail-news/${news._id}`} className="m-4">
+                      <img src={news.image} alt="news" width={250}  height={'auto'}/>
+                    </Link>
+                    <div style={{marginTop:'auto',marginBottom:'auto'}}>
+                      <div className="post-meta">{news.createdAt && !isNaN(new Date(news.createdAt)) && (
+                        <small className="text-body-secondary">
+                          {new Date(news.createdAt).toDateString()}
+                        </small>
+                      )}</div>
+                      <h4 style={{ margin: 'auto' }}><Link to={`/detail-news/${news._id}`}>{news.title}</Link></h4>
+                      <p>{news.keypoints}</p>
+                    </div>
+                  </div>
+                ))
+              }
+
             </div>
-          </div>
-          ))
-        }
-       
 
-      
-        {/* Paging */}
-        <div className="text-start py-4">
-          <div className="custom-pagination">
-            <Link to="#" className="prev">Prevous</Link>
-            <Link to="#" className="active">1</Link>
-            <Link to="#">2</Link>
-            <Link to="#">3</Link>
-            <Link to="#">4</Link>
-            <Link to="#">5</Link>
-            <Link to="#" className="next">Next</Link>
-          </div>
-        </div>{/* End Paging */}
-      </div>
-      
-      
-     
-    </div>
-  </div>
-</section>
-<Footer/>
 
-    
+
+          </div>
+        </div>
+      </section>
+      <Footer />
+
+
     </>
   )
 }

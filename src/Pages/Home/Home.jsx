@@ -63,7 +63,7 @@ const Home = () => {
     <>
     <Navbar/>
   <div className="row g-3">
-      <div className="0" style={{marginBottom:'600px'}}>
+      <div className="0" style={{marginBottom:'650px'}}>
       <Slider />
       </div>
         <div className="col-md-8 div123">

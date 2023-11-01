@@ -35,16 +35,12 @@ const Footer = () => {
           </ul>
         </div>
         <div className="col-lg-4">
-          <h3 className="footer-heading">Recent Posts</h3>
-          <ul className="footer-links footer-blog-entry list-unstyled">
+          <h3 className="footer-heading">Contact Us</h3>
+          <ul className="footer-links footer-blog-entry list-unstyled" style={{lineHeight:'2'}}>
+          <Link to="tel:+01204781211/219">Tel : 01204781211/219  </Link><br/>
+          <Link to='mailto:conferences@conwiz.in'>Email : conferences@conwiz.in</Link>
             <li>
-              <Link to="/blog" className="d-flex align-items-center">
-                <img src="https://thebalisun.com/wp-content/uploads/2021/03/Bali-To-Host-G20-Summit-In-2022-scaled.jpg" alt='logo' className="img-fluid me-3" />
-                <div>
-                  <div className="post-meta d-block"><span className="date">Culture</span> <span className="mx-1">•</span> <span>Jul 5th '22</span></div>
-                  <span>INTERNATIONAL CONFERENCE ON RECENT TRENDS IN MECHANICAL ENGINEERING</span>
-                </div>
-              </Link>
+              <p><b>Address :</b> A-118, 1st Floor, Sector-63, Noida, U.P. India</p>
             </li>
        
           </ul>

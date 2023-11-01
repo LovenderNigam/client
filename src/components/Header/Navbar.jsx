@@ -59,7 +59,7 @@ const Navbar = () => {
                   Who we are
                 </NavLink>
                 <ul className="dropdown-menu">
-                  <li><NavLink className="dropdown-item" to="/blogs">Blogs</NavLink></li>
+                  <li><NavLink className="dropdown-item" to="/blogs">News</NavLink></li>
                   <li><NavLink className="dropdown-item" to="/terms-and-conditions">Terms and Conditions</NavLink></li>
                   <li><NavLink className="dropdown-item" to="/publication-management">Publication Management</NavLink></li>
                   <li><hr className="dropdown-divider" /></li>

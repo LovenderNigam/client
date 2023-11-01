@@ -75,8 +75,10 @@ navigate('/contact');
           <div className="info-item">
           <i className="bi bi-phone" />
           <h3>Phone Number</h3>
-            <p className='text-center'><Link to="tel:+01204781211/219">+ 01204781211/219  </Link></p>
-          <Link  to="https://wa.me/+917827713832" className='bi bi-whatsapp'>Whatsapp (7827713832)</Link> 
+            <p className='text-center'><Link to="tel:+01204781211/219">Tel: + 01204781211/219  </Link></p>
+            <Link to="https://wa.me/+917827713832" >
+      <i className="bi bi-whatsapp" style={{ fontSize: '25px',color:'green' }}></i> Whatsapp (7827713832)
+    </Link>
           </div>
           
         </div>
@@ -123,3 +125,4 @@ navigate('/contact');
 }
 
 export default Contact
+

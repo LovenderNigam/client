@@ -55,7 +55,9 @@ const Subscribe = () => {
       <div className="row justify-content-center">
         <div className="col-lg-6 col-md-10 d">
         <input type="email" className="form-control"  id="email" placeholder="Your Email" required onChange={(e) => onValueChange(e)} name='user_email'/>
+        <div className="mt-2" style={{textAlign:'center'}}>
         <button className='btn btn-dark' type='submit'  onClick={()=> addSubscriberDetails()}>Send Message</button>
+        </div>
         </div>
       </div>
     </form>
